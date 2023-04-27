@@ -15,7 +15,7 @@ C:/Users/GomChan/Documents/GitHub/Making-2D-Unity-Game/Uni-Run
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-6134
+2408
 Successfully changed project path to: C:/Users/GomChan/Documents/GitHub/Making-2D-Unity-Game/Uni-Run
 C:/Users/GomChan/Documents/GitHub/Making-2D-Unity-Game/Uni-Run
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/GomChan/Documents/GitHub/Making-2D-Unity-Game/Uni-Run
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 29.11 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 27.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.0b3 (bb7e34618385)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.0b3/Editor/Data/Resources/UnitySubsystems
@@ -63,72 +63,72 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b3/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b3/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b3/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56856
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.0b3/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006433 seconds.
+Registered in 0.005914 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 23.22 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 22.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.687 seconds
+- Completed reload, in  0.652 seconds
 Domain Reload Profiling:
-	ReloadAssembly (707ms)
-		BeginReloadAssembly (59ms)
+	ReloadAssembly (672ms)
+		BeginReloadAssembly (56ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (319ms)
-			LoadAssemblies (57ms)
+		EndReloadAssembly (314ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (120ms)
+			SetupTypeCache (122ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (12ms)
-			SetupLoadedEditorAssemblies (128ms)
+			SetupLoadedEditorAssemblies (122ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (23ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (63ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				ProcessInitializeOnLoadAttributes (59ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004390 seconds.
+Registered in 0.003538 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.741 seconds
+- Completed reload, in  0.728 seconds
 Domain Reload Profiling:
-	ReloadAssembly (771ms)
-		BeginReloadAssembly (124ms)
+	ReloadAssembly (758ms)
+		BeginReloadAssembly (119ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (579ms)
-			LoadAssemblies (60ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (572ms)
+			LoadAssemblies (55ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (199ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (210ms)
+			SetupLoadedEditorAssemblies (208ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (39ms)
-				ProcessInitializeOnLoadAttributes (136ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (137ms)
 				ProcessInitializeOnLoadMethodAttributes (17ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
@@ -137,13 +137,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 49 unused Assets / (55.4 KB). Loaded Objects now: 2129.
 Memory consumption went from 75.6 MB to 75.6 MB.
-Total: 2.155800 ms (FindLiveObjects: 0.110100 ms CreateObjectMapping: 0.032200 ms MarkObjects: 1.945700 ms  DeleteObjects: 0.066400 ms)
+Total: 2.095500 ms (FindLiveObjects: 0.108000 ms CreateObjectMapping: 0.030600 ms MarkObjects: 1.896900 ms  DeleteObjects: 0.058300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -157,31 +157,55 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 715976.604142 seconds.
-  path: Assets/Sprites
-  artifactKey: Guid(5e7111d750837fe4e9af7b360e7d667c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites using Guid(5e7111d750837fe4e9af7b360e7d667c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ab33fa5778c7ff7831f84fe2bcf750') in 0.006822 seconds 
+  Time since last request: 812189.766873 seconds.
+  path: Assets/Sprites/Animations
+  artifactKey: Guid(c4b2ae0b7a95d2f40bdb25edc5121c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Animations using Guid(c4b2ae0b7a95d2f40bdb25edc5121c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3433ba82050b688552a44114612dc6d') in 0.006590 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 556.040253 seconds.
-  path: Assets/Sprites/Toko_Die.png
-  artifactKey: Guid(5b9cf154823f6440b9c40d54c5d1bdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Toko_Die.png using Guid(5b9cf154823f6440b9c40d54c5d1bdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '423c3f60149f00856271ffda006f5de6') in 0.095620 seconds 
+  Time since last request: 102.147288 seconds.
+  path: Assets/Main.unity
+  artifactKey: Guid(fb508ce27d8bac545be522ddf421b2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main.unity using Guid(fb508ce27d8bac545be522ddf421b2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de06541d640ea691cfe417cb94656317') in 0.012120 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 423.151080 seconds.
-  path: Assets/Sprites/Toko_Run.png
-  artifactKey: Guid(d7159a67a357942ef8404ce06e20db64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Toko_Run.png using Guid(d7159a67a357942ef8404ce06e20db64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdda7f310b171be2ae13e01a5b10e399') in 0.014751 seconds 
+  Time since last request: 196.003822 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31858aa9811287a817ef9c584839beb1') in 0.005998 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 30.049613 seconds.
-  path: Assets/Sprites/Toko_Run.png
-  artifactKey: Guid(d7159a67a357942ef8404ce06e20db64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Toko_Run.png using Guid(d7159a67a357942ef8404ce06e20db64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8142ba01007e4032e9b87297d0f51cc9') in 0.008076 seconds 
+  Time since last request: 4.455263 seconds.
+  path: Assets/Animations
+  artifactKey: Guid(02f53c0208334bc4383d61864cdfe05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations using Guid(02f53c0208334bc4383d61864cdfe05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a2cdd66b51f75c369dc1a6750253513') in 0.002277 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 47.298526 seconds.
-  path: Assets/Sprites/Toko_Run.png
-  artifactKey: Guid(d7159a67a357942ef8404ce06e20db64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Toko_Run.png using Guid(d7159a67a357942ef8404ce06e20db64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a338097345597b4f1b3e9057a1f014a9') in 0.017603 seconds 
+  Time since last request: 158.451706 seconds.
+  path: Assets/Sprites/Toko_Jump.png
+  artifactKey: Guid(f716f7502ddb743ef982e4d223876d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Toko_Jump.png using Guid(f716f7502ddb743ef982e4d223876d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86de53c9dacff39fc25e030ee0b66bb5') in 0.092342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.704273 seconds.
+  path: Assets/Animations/Player.controller
+  artifactKey: Guid(585be146206627b46bf9cd6b1f4975e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player.controller using Guid(585be146206627b46bf9cd6b1f4975e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b698236972b2da965daf0ff68e36f098') in 0.012420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.705325 seconds.
+  path: Assets/Animations/Jump.anim
+  artifactKey: Guid(6bc718e2b940f30428d97eaa495e0898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Jump.anim using Guid(6bc718e2b940f30428d97eaa495e0898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d0714067ea409e4c562c1f4d2932a3e') in 0.007946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.777659 seconds.
+  path: Assets/Animations/Die.anim
+  artifactKey: Guid(979547d7136c98c4291cfc9b570ad6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Die.anim using Guid(979547d7136c98c4291cfc9b570ad6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c61c59f5a6d69b57c050d40389d1a1f9') in 0.006704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.695783 seconds.
+  path: Assets/Animations/Run.anim
+  artifactKey: Guid(cebe70dab1a17eb4990bcfb11c412198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Run.anim using Guid(cebe70dab1a17eb4990bcfb11c412198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9b4491afd2fb958ab88a9fbd358e118') in 0.006208 seconds 
