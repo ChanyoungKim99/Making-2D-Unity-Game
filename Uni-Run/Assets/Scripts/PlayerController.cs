@@ -21,9 +21,9 @@ public class PlayerController : MonoBehaviour {
    }
 
     private void Update() {
-        // 사망 시 처리를 더 이상 진행하지 않고 종료
         if (isDead)
         {
+            // 사망 시 처리를 더 이상 진행하지 않고 종료
             return;
         }
         // 마우스 왼쪽 버튼을 눌렀으며 && 최대 점프 횟수(2)에 도달하지 않았다면
@@ -51,18 +51,48 @@ public class PlayerController : MonoBehaviour {
     }
 
    private void Die() {
-       // 사망 처리
+        // 애니메이터의 Die 트리거 파라미터를 셋
+        animator.SetTrigger("Die");
+        // 오디오 소스에 할당된 오디오 클립을 deathClip으로 변경
+        playerAudio.clip = deathClip;
+        // 사망 효과음 재생
+        playerAudio.Play();
+
+        // 속도를 제로(0,0)로 변경
+        playerRigidbody.velocity = Vector2.zero;
+        // 사망 상태를 true로 변경
+        isDead = true;
    }
 
    private void OnTriggerEnter2D(Collider2D other) {
-       // 트리거 콜라이더를 가진 장애물과의 충돌을 감지
+       if(other.tag == "Dead" && !isDead)
+        {
+            // 충돌한 상대방의 태그가 Dead이며 아직 사망하지 않았다면 Die() 실행
+            Die();
+        }
    }
 
    private void OnCollisionEnter2D(Collision2D collision) {
-       // 바닥에 닿았음을 감지하는 처리
+        // 어떤 콜라이더와 닿았으며, 충돌 표면이 위쪽을 보고 있으면
+        if (collision.contacts[0].normal.y > 0.7f)
+        {
+            // Collision 타입은 충돌 지점들의 정보를 담은 ContactPoint 타입의 데이터를
+            // contacts 라는 배열 변수로 제공
+            // contacts[0] 는 두 물체 사이의 충돌지점중 첫번째
+            // normal 벡터 = 평면이 바주보는 방향의 벡터 (외적으로 구했던 그 벡터다)
+
+            // normal 벡터의 y값이 1이면 위를 바라본다
+            // normal 벡터의 y값이 0.7이면 대략 45도의 경사를 가진채 표면이 위를 향함
+
+
+            // isGrounded를 true로 변경하고, 누적 점프 횟수를 0으로 리셋
+            isGrounded = true;
+            jumpCount = 0;
+        }
    }
 
    private void OnCollisionExit2D(Collision2D collision) {
-       // 바닥에서 벗어났음을 감지하는 처리
+        // 어떤 콜라이더에서 떼어진 경우 isGrounded를 false로 변경
+        isGrounded = false;
    }
 }
